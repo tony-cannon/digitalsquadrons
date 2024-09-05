@@ -1,0 +1,660 @@
+/*
+Theme Name:   Digital Squadrons - buddyboss-theme child theme
+Description:  Write here a brief description about your child-theme
+Author:       Buddyboss
+Author URL:   Write here the author's blog or website url
+Template:     buddyboss-theme
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  buddyboss-theme-child
+*/
+
+/* Write here your own personal stylesheet */
+
+.bb-logo {-webkit-transform: initial !important; transform: initial;}
+
+#signup-form em.error {
+    display: inline-block;
+    width: 100%;
+    background-color: #EF3E46;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 3px;
+    border: 0;
+    font-style: normal;
+}
+
+#validityChecker .name-info {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 7px 0px 3px 0px;
+    border: 0;
+    font-style: normal;
+    color: #fff;
+}
+
+#validityChecker .error {
+    background-color: #EF3E46;
+}
+
+#validityChecker .available {
+    background-color: #00943e;
+    
+}
+
+body.buddypress.register article.bp_register {
+    max-width: 500px !important;
+}
+
+.bs-bp-container-reg #buddypress #signup-form.standard-form .submit input[type="submit"] {
+    float: right;
+}
+
+/* .bs-bp-container-reg #buddypress #signup-form.standard-form div.error {
+    display: none;
+} 
+*/
+
+body.page #breadcrumbs.bb-yoast-breadcrumbs, body.forum-archive #breadcrumbs.bb-yoast-breadcrumbs, body.register .bb-yoast-breadcrumbs {
+    display: none;
+}
+
+#item-body .user-subnav {
+    margin: 0 0 20px 30px;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+    padding-top: 25px;
+}
+
+.bb-yoast-breadcrumbs {
+    padding: 10px 10px 10px !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+    background: #ececec2b;
+    color: #027CAB;
+}
+
+.groups-admin-manage, .bp-manage-group-container {
+    font-size: 14px;
+}
+
+.mce-panel .mce-btn i.mce-caret {
+    margin-top: 7px;
+}
+
+.ds-group-recruiting-box {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bp-controls-wrap#group-notify-members {
+    display: none;
+}
+
+.mec-fes-form {
+    background: #ffffff;
+}
+
+/* Save to mec css stylesheet when completed.. */
+.mec-container {
+    padding-top: 20px;
+}
+
+/* .mec-container h1 {
+    display: none;
+} */
+
+.mec-wrap .mec-totalcal-box .mec-totalcal-view span {
+    text-transform: none !important;
+    font-size: 13px;
+}
+
+.user-nicename a::after {
+    white-space: pre-line !important;
+}
+
+/* ---------------------------------------------------------- */
+
+.group-location-links {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/* .group-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 0 0 0 !important;
+    list-style: none !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+} */
+
+.group-socials {
+    white-space: nowrap;
+}
+
+.group-socials i {
+    font-size: 1.5em;
+}
+
+.group-socials span.social {
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 782px) {
+    .group-socials, .group-location {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buddypress-wrap select {
+        height: 34px !important;
+        width: 100%;
+    }
+
+    #item-body .user-subnav {
+        margin: 0 !important;
+    }
+
+    .buddypress-wrap .subnav-filters {
+        margin: 0 !important;
+    }
+
+    .buddypress-wrap .subnav-filters .select-wrap {
+        margin-right: 0 !important;
+    }
+
+    .bp-groups-filter-wrap, .bp-group-filter-wrap {
+        width: 100% !important;
+    }
+
+    .bp-secondary-header > .flex {
+        flex-flow: row wrap !important;
+        justify-content: flex-end;
+    }
+
+    .directory.groups .bp-secondary-header {
+        margin-top: 0 !important;
+    }
+
+    .buddypress-wrap .subnav-filters div {
+        margin: 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .grid-filters {
+        order: 1;
+        margin-bottom: 10px;
+        margin-left: 10px !important;
+    }
+
+    #ds-group-secondary-search-filter input[type=checkbox] {
+        margin-right: 0 !important;
+    }
+
+    #ds-group-filters {
+        order: 2;
+    }
+
+    #ds-group-platform-filters {
+        order: 3;
+    }
+
+    #ds-group-proximity-filters {
+        order: 4;
+    }
+
+    #ds-group-directory-filters {
+        order: 5;
+    }
+
+    .bp-subnavs select {
+        margin-bottom: 10px !important;
+    }
+
+    .bp-messages-nav-panel .bp-subnavs select {
+        margin-top: 10px;
+    }
+
+    .bp-messages-nav-panel .bp-subnavs {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    #user_messages_search_form {
+        margin: 10px 0 !important;
+    }
+
+    .bp-search.messages-search {
+        padding: 0 10px;
+    }
+
+    .signin-button {
+        background-color: #f3f3f3 !important;
+        border-color: rgb(0, 0, 0) !important;
+        color: rgb(0, 0, 0) !important;
+        padding: 7px 20px 4px 20px !important;
+    }
+
+    .footer-bottom-right {
+        padding-left: 0 !important;
+    }
+
+    body #buddypress div#item-header-cover-image h2 a {
+        font-size: 1.2rem !important;
+    }
+
+    .item-header-wrap .bp-group-meta .group-type {
+        margin: 3px 0;
+    }
+
+    p.bp-group-meta.bp-group-type {
+        flex-flow: wrap;
+    }
+
+    span.group-visibility {
+        align-self: center;
+    }
+
+    .ds-event-type-select, .ds-event-category-select, .ds-event-text-search {
+        width: 100%;
+        padding: 5px 0 !important;
+    }
+    
+    .ds-event-type-select {
+        order: 3 !important;
+    }
+    
+    .ds-event-category-select {
+        order: 4 !important;
+    }
+    
+    .ds-event-text-search {
+        order: 5 !important;
+    }
+    
+    .ds-event-add-event {
+        order: 2 !important;
+        text-align: right;
+    }
+    
+    .ds-events-navpanel {
+        flex-flow: row wrap;
+    }
+
+    .ds-event-search {
+        width: 100%;
+    }
+}
+
+
+/* .group-socials a {
+    display: block;
+    line-height: 1;
+    margin: 6px;
+    color: #0c87e1;
+} */
+
+/* .group-socials a:hover {
+    color: rgb(207, 24, 60);
+} */
+
+.ds-location-flag {
+    color: #545454;
+}
+
+.ds-location-flag i {
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 782px) {
+
+    .logged-in .item-header-wrap .bp-group-title-wrap {
+        max-width: 100% !important;
+        flex-flow: row wrap;
+    }
+
+    .logged-in .item-header-wrap .group-description {
+        max-width: 80% !important;
+    }
+
+    .group-location-links { 
+        max-width: 80%;
+    }
+
+    #item-body .user-subnav.bp-messages-filters {
+        margin: 10px !important;
+    }
+
+    .item-header-wrap span.group-visibility.platform, .bp-list li .item-meta span.group-visibility.platform {
+        margin-right: calc(100% - 160px);
+    }
+
+}
+
+.item-header-wrap .bp-group-meta .group-type.secondary {
+    background: #ccc !important;
+    color: #093860;
+}
+
+.item-header-wrap .bp-group-meta .group-type {
+    background: #c9263e !important;
+    margin-right: 6px !important;
+}
+
+
+/* .group-description {
+    max-height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px !important;
+}
+
+.group-description .read-more { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    text-align: center; 
+    margin: 0; padding: 10px 0; 
+      
+    /* "transparent" only works here because == rgba(0,0,0,0) */
+    /* background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255));
+  }  */
+
+.bbp-breadcrumb {
+    display: none !important;
+}
+
+.groups.group-admin #buddypress #item-body #group-settings-form select {
+    margin-bottom: 30px !important;
+}
+
+.group-desc-label {
+    margin-top: 30px !important;
+}
+
+.ds-bp-group-title {
+    width: 100%;
+}
+
+#ds-group-secondary-search-filter {
+    padding-top: 5px;
+}
+
+#ds-group-secondary-search-filter label {
+    font-size: 14px;
+}
+
+#ds-group-secondary-search-filter input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.bp-list li .item-meta span {
+    background-color: #eef0f3;
+    border-radius: 100px;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .25px;
+    color: rgba(77,92,109,.8);
+    padding: 6px 12px;
+    line-height: 1;
+    margin: 3px 6px 0 0;
+    white-space: nowrap;
+}
+
+.bp-list li .item-meta span.type-separator {
+    display: none;
+}
+
+.bp-list li .item-meta span.group-type {
+    background: #c9263e;
+    color: white;
+}
+
+.bp-list li .item-meta span.group-type.secondary {
+    background: #548ba7 !important;
+    color: #ffffff;
+}
+
+.item-header-wrap span.group-visibility.public, .bp-list li .item-meta span.group-visibility.public {
+    background: #e8fff1 !important;
+    border-color: #48c56b;
+    color: #48c56b;
+}
+
+.bp-list li .item-meta span.group-visibility.public:before {
+    content: '\e8e4';
+    color: #0dd081;
+}
+
+.item-header-wrap span.group-visibility.private, .bp-list li .item-meta span.group-visibility.private {
+    background: #ffefef !important;
+    border-color: #ff2d2d;
+    color: #ff2d2d;
+}
+
+.bp-list li .item-meta span.group-visibility.private:before {
+    content: '\e90d';
+    color: #d94c61;
+}
+
+.bp-list li .item-meta span.group-visibility.hidden:before {
+    content: '\e850';
+    color: #f7ba45;
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.item-header-wrap span.group-visibility, .bp-list li .item-meta span.group-visibility {
+    border: 1px solid #8d8d8d;
+}
+
+.item-header-wrap span.group-visibility, .bp-list li .item-meta span.group-visibility {
+    margin-bottom: 10px;
+    border-radius: 4px !important;
+}
+
+.item-header-wrap span.group-visibility.platform, .bp-list li .item-meta span.group-visibility.platform {
+    background: #505050;
+    color: #fff;
+    border-color: black;
+}
+
+.bp-list li .item-meta span.group-visibility.platform {
+    page-break-after: always; /* CSS 2.1 syntax */
+    break-after: always; /* New syntax */
+  }
+
+.bp-list li .item-meta span.group-visibility.platform:before {
+    content: '\e840';
+    color: #ffffff;
+}
+
+.bp-list li .item-meta span.group-visibility:before {
+    font: normal normal normal 12px/1 bb-icons;
+    speak: none;
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: inherit;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bp-list li .item-meta.group-details {
+    margin-bottom: 10px !important;
+    height: 100px !important;
+}
+
+.buddypress-wrap .grid.groups-list li .list-title {
+    height: 50px;
+}
+
+.user-name span {
+    color: #ef2c3c;
+    font-style: italic;
+    font-weight: 600;
+}
+
+a.user-link:hover span {
+    color: rgb(255 189 90);
+}
+
+#buddypress .bp-list.groups-list li .list-wrap .item .item-block {
+    padding-right: 0 !important;
+}
+
+#item-body .user-subnav.bp-messages-filters {
+    margin: 10px !important;
+}
+
+/**
+ * Group Events CSS...
+ *
+**/
+
+.ds-group-events-wrapper {
+    background: #fff;
+    border: 1px solid #E7E9EC;
+    border-radius: 5px;
+    min-height: 50vh;
+}
+
+.ds-events-container {
+    margin: 20px 0;
+}
+
+.ds-events-navpanel {
+    border-bottom: 1px solid #E7E9EC;
+    min-height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #122B46;
+}
+
+.ds-event-list-title {
+    order: 1;
+    flex-grow: 2;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ds-event-type-select {
+    order: 2;
+    flex-grow: 1;
+}
+
+.ds-event-category-select {
+    order: 3;
+    flex-grow: 1;
+}
+
+.ds-event-text-search {
+    order: 4;
+    flex-grow: 1;
+}
+
+.ds-event-add-event {
+    order: 5;
+    flex-grow: 1;
+}
+
+.ds-events-navpanel .subnav-filters {
+    margin: 0 10px;
+}
+
+.ds-event-add-event a {
+    color: #007cff;
+    font-size: 0;
+    padding: 0;
+}
+
+.ds-event-add-event a::after {
+    content: "\E80C";
+    font-size: 25px;
+    line-height: 1;
+    font-family: "bb-icons";
+    vertical-align: top;
+    text-align: center;
+    transition: color 0.1s ease-in;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Event Form and List */
+.ds-event-contents {
+    position: relative;
+}
+
+.ds-events-list, .ds-event-form {
+    /* position: absolute; 
+    top:0px; 
+    left: 0px; */
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+}
+
+/* .ds-event-form {
+    z-index:-10;
+} */
+
+.ds-events-item {
+    border: 1px solid #E7E9EC;
+    border-radius: 10px;
+    box-shadow: 1px 1px 11px 1px #f5f5f5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#buddypress #header-cover-image .header-cover-img { 
+    max-width: 101% !important;
+}
+
+.bb-footer .widget li {
+    margin: 5px 0 !important;
+}
+
+.footer-widget-area.bb-footer {
+    margin-top: 50px;
+}
+
+.elementor-widget-bbp-members {
+    height: auto !important;
+}
+
+#page #buddypress #item-body .bp-profile-wrapper #subnav #member-location:before {
+    content: '\e893';
+}
+
+#page #buddypress #item-body .bp-profile-wrapper #subnav #platform-aircraft:before {
+    content: '\e840';
+}
+
+#page #buddypress #item-body .bp-profile-wrapper #subnav #social-media:before {
+    content: '\e97a';
+}
